@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href=".">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulář</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/form.js" defer="defer"></script>
+</head>
+<body>
+	<div class="tlc">
+		<div class="header">
+			<div class="htext">
+				<h1>Datový formulář</h1>
+			</div>
+			<div class="navbar">
+				<div>
+					<h2><a href="index.html" class="a">Fotogalerie</a></h2>
+				</div>
+				<div>
+					<h2><a href="form.html" class="a">Formulář</a></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<p class="intro_text">Na této stránce se nachází ukázka formuláře pro odesílání požadavků serveru.</p>
+		</div>
+		<div class="row">
+			<form action="form.html" class="form">
+				<div class="row">
+					<div class="flex_rows">
+						<div class="splitcol">
+							<label for="fname">Jméno</label>
+							<input type="text" name="fname">
+						</div>
+						<div class="splitcol">
+							<label for="sname">Příjmení</label>
+							<input type="text" name="sname">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<label for="tnum">Telefonní číslo</label>
+					<input type="number" name="tnum" min="0" max="999999999" step="1">
+				</div>
+				<div class="row">
+					<label for="email">Email</label>
+					<input type="text" name="email">
+				</div>
+				<div class="row">
+					<label for="pass">Heslo</label>
+					<input type="password" name="pass" min="0" max="999999999" step="1">
+				</div>
+				<div class="row">
+					<label for="passa">Heslo znovu</label>
+					<input type="password" name="passa" min="0" max="999999999" step="1">
+				</div>
+				<div class="row submit">
+					<input type="submit" value="Odeslat">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
